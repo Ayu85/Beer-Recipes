@@ -11,6 +11,13 @@ function Shimmer() {
   return (
     <div className="shimmer-body">
       <ShimmerCard />
+      <ShimmerCard />
+      <ShimmerCard />
+      <ShimmerCard />
+      <ShimmerCard />
+      <ShimmerCard />
+      <ShimmerCard />
+      <ShimmerCard />
     </div>
   );
 }

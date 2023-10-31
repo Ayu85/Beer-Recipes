@@ -4,8 +4,7 @@ import Shimmer from "./Shimmer";
 function Body() {
   const [searchText, setsearchText] = useState();
   let [beerData, setbeerData] = useState([]);
-  let [filteredData, setfilteredData] = useState(["temp"]);
-//   if (filteredData.length == 0) return <Shimmer />;
+  let [filteredData, setfilteredData] = useState([]);
   // console.log(beerData);
   console.log(filteredData);
   function getFdata(searchText) {
@@ -24,7 +23,9 @@ function Body() {
     setfilteredData(jsonBeer);
   };
 
-  return (
+  return filteredData.length == 0 ? (
+    <Shimmer />
+  ) : (
     <div>
       <div className="search-area">
         <input
