@@ -1,68 +1,81 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.header{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-    flex-wrap: wrap;
-    align-items: center;
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-wrap: wrap;
+  align-items: center;
 }
-.nav-buttons>ul{
-    display: flex;
-    list-style: none;
-    gap: 10px;
-    font-size: 20px;
+.nav-buttons > ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  font-size: 20px;
 }
-.logo>img{
-    width: 110px;
-   
+.nav-buttons > ul > a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
-.search-area{
-    display: flex;
-    justify-content: center;
-
+.logo > img {
+  width: 110px;
 }
-.search-area>input{
-    width:350px;
-    height: 20px;
-    padding-left: 5px;
+.search-area {
+  display: flex;
+  justify-content: center;
 }
-.search-area>button{
-    width: 60px;
+.search-area > input {
+  width: 450px;
+  height: 30px;
+  padding-left: 5px;
 }
-.card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    width: 250px;   
-    min-height: 350px;
-    gap: 3px;
-    border: 1px solid rgba(210, 210, 210, 0.53);
-    background: rgba(255, 245, 238, 0.459);
-    padding: 10px;
-    gap: 0;
+.search-area > button {
+  width: 90px;
+  font-size: 15px;
+  background-color: rgba(255, 245, 238, 0.644);
+  border: 1px solid rgba(0, 0, 0, 0.644);
+  cursor: pointer;
 }
-.card>img{
-    width: 100px;
-    height: 250px;
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 250px;
+  min-height: 350px;
+  gap: 3px;
+  border: 1px solid rgba(210, 210, 210, 0.53);
+  background: rgba(255, 245, 238, 0.459);
+  padding: 10px;
+  gap: 0;
 }
-.body{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 30px;
+.card > img {
+  width: 100px;
+  height: 250px;
 }
-.name{
-    text-decoration: underline;
+.body {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
 }
-.tag{
-    font-size: 20px;
-    border: 1px solid black;
+.name {
+  background: #000;
+  color: white;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+.tag {
+  font-size: 20px;
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

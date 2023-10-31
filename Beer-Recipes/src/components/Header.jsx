@@ -8,11 +8,15 @@ function Header() {
       </div>
       <div className="nav-buttons">
         <ul>
-          <li>Home</li>
+          <Link to={"/"}>
+            <li>Home</li>
+          </Link>
           <Link to={"/about"}>
             <li>About</li>
           </Link>
-          <li>Contact</li>
+          <Link to={"/contact"}>
+            <li>Contact</li>
+          </Link>
         </ul>
       </div>
     </div>

@@ -9,7 +9,7 @@ function Body() {
     console.log(filteredData);
     function getFdata(searchText) {
         let d = beerData.filter((items) => {
-            return items.name.includes(searchText);
+            return items.name.toLowerCase().includes(searchText.toLowerCase());
         })
         return d;
     }
